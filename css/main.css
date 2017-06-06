@@ -1,0 +1,219 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans|Mogra|Righteous');
+
+/* Reset */
+body {
+	margin: 0px;
+}
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Righteous', Helvatica, monospace, serif;
+}
+
+/*
+/* Header Styling
+*/
+
+header {
+	width: 100%;
+	height: 67%;
+
+	background-image: url('/assets/images/header.jpg');
+	background-position: bottom;
+	background-size: cover;
+	background-attachment: fixed;
+
+	color: white;
+}
+
+#header-caption-wrapper {
+	top: 0;
+	left: 0;
+	position: absolute;
+
+	height: inherit;
+	width: 100%;
+
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+#header-caption {
+	text-align: center;
+	height: auto;
+
+	top: 40%;
+	left: 50%;
+	position: relative;
+	transform: translate(-50%, -50%);
+}
+
+#header-caption h1 {
+	font-size: 80px;
+	font-family: 'Righteous', Helvetica, serif;
+}
+
+#header-caption h2 {
+	font-size: 40px;
+	font-family: 'Mogra', Helvetica, serif;
+}
+
+/* Navigation Menu Stlying */
+
+nav {
+	height: 50px;
+	width: 67%;
+
+	background: #333;
+
+	top: 100%;
+	left: 50%;
+	position: relative;
+
+	transform: translate(-50%, -100%);
+}
+
+nav ul {
+	list-style: none;
+
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	padding: 0 5px 0 5px;
+	display: inline-block;
+}
+
+nav ul li a, nav ul li a:visited {
+	display: block;
+	width: inherit;
+	padding: 0 10px 0 10px;
+
+	font-size: 20px;
+	font-family: 'Righteous';
+	line-height: 50px;
+
+	color: white;
+	text-decoration: none;
+
+	transition: all linear 0.2s;
+}
+
+nav ul li a:hover {
+	display: block;
+	width: inherit;
+	padding: 0 10px 0 10px;
+
+	font-size: 20px;
+	font-family: 'Righteous';
+	line-height: 40px;
+
+	background-color: #555;
+	color: white;
+	text-decoration: none;
+
+	border-bottom: 3px #5B89FF solid;
+}
+
+nav ul li a:active,  nav ul li.active a{
+	display: block;
+	width: inherit;
+	padding: 0 10px 0 10px;
+
+	font-size: 20px;
+	font-family: 'Righteous';
+	line-height: 40px;
+
+	background-color: #555;
+	color: white;
+	text-decoration: none;
+
+	border-bottom: 3px #38D441 solid;
+}
+
+/* Card Styling */
+
+#cards-list { /* Masonry container */
+    column-width: 20em;
+    column-gap: 1em;
+}
+
+.card {
+    background-color: #f9f9f9;
+    display: inline-block;
+    margin: 0 0 1em;
+	padding: 0;
+    width: 100%;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card, .card:focus {
+    background-color: #f9f9f9;
+    display: inline-block;
+    margin: 0px 0px 1em;
+	padding: 0px;
+    width: 100%;
+}
+
+.card-details {
+	padding: 5px;
+}
+
+.card-title {
+	font-size: 40px;
+	font-family: 'Righteous', Helvatica, monospace, serif;
+	text-align: center;
+}
+
+.card-desc {
+	display: block;
+	width: 100%;
+
+	padding: 7px 5px 7px 7px;
+
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 20px;
+}
+
+.card-image {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+
+	width: 100%;
+}
+
+
+/* Footer Styling */
+
+footer {
+	display: block;
+	width: 100%;
+
+	bottom: 0;
+	position: relative;
+
+	background: #222;
+	color: #ddd;
+
+	border-top: 5px #5B89FF solid;
+}
+
+footer #copyright {
+	float: left;
+}
+
+footer #credit {
+	float: right;
+}
+
+/* Container Styling */
+
+#container {
+	background: #fafafa;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 20px;
+	margin-top: 20px;
+}
