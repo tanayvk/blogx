@@ -4,6 +4,7 @@
 /* Reset */
 body {
 	margin: 0px;
+	background-color: #111;
 }
 
 /* Typography */
@@ -36,7 +37,7 @@ header {
 	height: inherit;
 	width: 100%;
 
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 #header-caption {
@@ -72,6 +73,8 @@ nav {
 	position: relative;
 
 	transform: translate(-50%, -100%);
+
+	border-bottom: 5px solid rgba(0, 0, 0, 0);
 }
 
 nav ul {
@@ -188,6 +191,14 @@ nav ul li a:active,  nav ul li.active a{
 
 /* Footer Styling */
 
+footer #copyright {
+	float: left;
+}
+
+footer #credit {
+	float: right;
+}
+
 footer {
 	display: block;
 	width: 100%;
@@ -201,19 +212,11 @@ footer {
 	border-top: 5px #5B89FF solid;
 }
 
-footer #copyright {
-	float: left;
-}
-
-footer #credit {
-	float: right;
-}
 
 /* Container Styling */
 
 #container {
 	background: #fafafa;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 0 3em #5B89FF;
 	padding: 20px;
-	margin-top: 20px;
 }
